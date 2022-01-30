@@ -6,7 +6,7 @@ let search_results=document.getElementsByClassName("search_results")[0];
 // Seaarch recomendations for default page.
 
 
-let API_KEY='AIzaSyAG7keebzaN5xikXmYpGV83oGtxCj2mu_M';
+let API_KEY='AIzaSyDYkPM6QcT95ldjQKGyW12ZJGmXTZUV_aA';
 
 let SEARCH_ENGINE_ID='ad2d6c1427eb695cc';
 
@@ -17,6 +17,46 @@ let new_str="";
 let sList=[];
 
 let sb=document.getElementsByClassName("search")[0];
+
+// COOKIES section
+
+
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+  
+
+  
+
+
+
+  setCookie("Javscript Tutorial","messi exists",1);
+  setCookie("Helican space","rono exists",1);
+  setCookie("HTML tutorial","name exists",1);
+  setCookie("freecodecamp","name exists",1);
+  setCookie("Geekster","name exists",1);
+  setCookie("Tata","name exists",1);
+  setCookie("ambani","name exists",1);
+
+
+let list_of_names=[];
+
+let cookieList=document.cookie.split("; ");
+for(let j=0;j<cookieList.length;j++){
+    list_of_names.push(cookieList[j].split("=")[0]);
+
+
+}
+
+console.log(list_of_names);
+
+// COOKIES section ends here
+
+// searchbar.addEventListener("focusin")
+
 
 
 searchbar.addEventListener("keyup",function(event){
@@ -60,24 +100,6 @@ searchbar.addEventListener("keydown",function(event){
 
 
 
-
-// searchbar.addEventListener("onkeydown",function(event){
-
-//     if(event.code === "Backspace" ){
-
-//         str=removefromList();
-//         // sList.pop();
-        
-
-//     }
-//     if(str===""){
-//         search_results.classList.add("hidden");
-
-//     }
-
-//     // disp_string();
-
-// });
    
     
     
@@ -121,7 +143,15 @@ function disp_string(s){
     if(s.length<=1){
         searchbar.value="";
         search_results.innerHTML="";
-        search_results.classList.add("hidden");
+        search_results.classList.remove("hidden");
+        list_of_names.forEach((l)=>{
+            let div=document.createElement("div");
+            div.textContent=l;
+            search_results.appendChild(div);
+
+        });
+
+
         return;
        
     }
@@ -159,9 +189,7 @@ function disp_string(s){
                             searchbar.value=this.textContent;
                             console.log(searchbar.textContent);
                             search_results.classList.add("hidden");
-                            search.addEventListener("click",function(){
-                                window.location.href=`./google.html`;
-                            });
+                           
 
                         });
         
@@ -220,7 +248,7 @@ sb.addEventListener("click",function(){
     str="";
 })
 
-// export default searchbar;
+
 
 searchbar.addEventListener("focusout",function(){
     sb.src='./search.png';
@@ -231,7 +259,19 @@ searchbar.addEventListener("focusout",function(){
 
 
 
+searchbar.addEventListener("focusin",function(){
 
+    search_results.innerHTML="";
+        search_results.classList.remove("hidden");
+        list_of_names.forEach((l)=>{
+            let div=document.createElement("div");
+            div.textContent=l;
+            search_results.appendChild(div);
+
+        });
+
+
+});
 
 
 
