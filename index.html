@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="recommendation.css">
+    <script src="recommendation.js" type="module" defer></script>
+    <script src="google.js" type="module" defer></script>
+    
+</head>
+<body>
+
+    <!-- Default Google Homepage -->
+
+    <nav>
+        <div><p>Gmail</p></div>
+        <div><p>Images</p></div>
+        <div><img src="./ic1.png" alt="" srcset=""></div>
+        <div class="prof">S</div>
+    </nav>
+
+    <main id="main">
+        <h1><span class="half-color" attribute="G">G</span>oogle</h1><span class="clone">Clone</span>
+        <div class="search_wrap"><div class="image_wrap"><img class="search" src="./search.png" alt="" srcset=""></div><input type="text" id="searchbar" /> <div class="image_wrap"><img id="mic" src="./mic.png" alt="" srcset=""></div> </div>
+
+        <div class="search_results hidden">
+           
+        </div>
+        <div class="buttons"><a ><button id="search">Google Search</button></a> <button>I'm Feeling Lucky</button></div>
+
+        <div class="ls"><img src="./d_pri.png" alt="" srcset=""><a href="#">Take a quick Checkup for Data Privacy Day</a></div>
+
+        <p class="langs">Google offered in: <span class="languages"> हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ</span> </p>
+
+    </main>
+
+
+    <!-- When the search page loads main should be hidden and gsearch cotnainer should show. -->
+
+
+    <div class="gsearch_container hidden" id="gsearch_container">
+
+        <div class="gheader">
+            <h1 class="ghead">Google</h1>
+            <!-- <input type="text"> -->
+            <div class="search_wrap"><div class="image_wrap"><img class="search" src="./search.png" alt="" srcset=""></div><input type="text" id="searchbar_two" /> <div class="image_wrap"><img id="mic" src="./mic.png" alt="" srcset=""></div> </div>
+
+            <div class="buttons_two"><a ><button id="search_two">Search</button></a></div>
+        </div>
+
+        <div class="content" id="content">
+            <!-- <div>
+                <div>display_url</div>
+                <div>5 Reasons to use Nodejs with React for Web Development</div>
+                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius minus ut est ipsum, suscipit totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur recusandae assumenda soluta ad minima provident quibusdam culpa officiis quos. </div>
+            </div>
+             -->
+        </div>
+       
+
+    </div>
+
+
+    <footer >
+
+        <div>
+            <p>About</p>
+            <p>Business</p>
+            <p>Advertising</p>
+            <p>How search works.</p>
+        </div>
+        <div>
+            <p>Privacy</p>
+            <p>Terms</p>
+            <p>Settings</p>
+
+        </div>
+
+    </footer>
+
+    
+    
+    
+
+    
+    
+</body>
+</html>

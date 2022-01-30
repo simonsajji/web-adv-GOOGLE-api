@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Baloo+Bhaijaan+2&family=Comfortaa&family=Concert+One&family=Dosis:wght@300&family=Genos:wght@300&family=Kumbh+Sans:wght@100;300&family=Lato&family=Montserrat:wght@300&family=Open+Sans+Condensed:wght@700&family=Pacifico&family=Pathway+Gothic+One&family=Patrick+Hand&family=Permanent+Marker&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100;300&family=Special+Elite&family=Titillium+Web:wght@200&family=Ubuntu+Condensed&family=Voltaire&display=swap');:root {
+    --google_font:'Kumbh Sans', sans-serif;
+    --light_weight:'Thin 100';
+    --bold_weight:'500';
+    --background_color:rgba(7, 7, 7, 0.9);
+   
+  }
+body{
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: var(--google_font);
+    font-weight: var(--light_weight);
+    color:whitesmoke;
+    background-color: var(--background_color);
+    /* overflow:hidden; */
+    overflow-x:hidden;
+   
+}
+
+nav{
+    display: flex;
+    height:3.5rem;
+    width:100vw;
+    flex-direction:row;
+    justify-content:right;
+    gap:1rem;
+    align-items:center;
+    /* font-size: 0.87rem;
+    color:rgb(241, 238, 238);
+    font-family: 'Lato', sans-serif; */
+    font-family: 'Titillium Web', sans-serif;
+
+    font-size:0.9rem;
+    font-weight:bolder;
+    letter-spacing:0.06rem;
+    overflow-x:hidden;
+   
+}
+
+
+nav .prof{
+    margin:0.5rem;
+    margin-right:2rem;
+    border-radius:50%;
+    width:2rem;
+    height:2rem;
+    font-size: 1.2rem;
+    background-color: rgba(25, 80, 25,0.85);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    opacity:0.8;
+}
+
+nav div img{
+    margin-top:0.3rem;
+}
+
+
+/* Main content of Default google homepage */
+
+
+main{
+    width:100vw;
+    height: calc(100vh - 7rem);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    gap:1rem;
+    /* flex-wrap: wrap; */
+    /* overflow:scroll; */
+    overflow-x:hidden;
+   
+
+
+
+}
+
+
+/* For GOOGLE FONT bg color for only first letter */
+
+
+.half-color {
+	padding:0px;
+	position:relative;
+	display:inline-block;
+ 	color:#4484f3;
+ 	z-index:1;
+}
+.half-color:after{
+	content: attr(attribute);
+	color:#fbbb04;
+	position:absolute;
+	top:0;
+	left:0;
+	width:22%;
+	overflow:hidden;
+	z-index:2;
+}
+
+.half-color:before{
+	content: attr(attribute);
+	color:#ec4434;
+	position:absolute;
+	top:0;
+	left:0;
+	height:40%;
+	overflow:hidden;
+	z-index:3;
+}
+
+main h1{
+    color:white;
+    font-size: 5.5rem;
+    margin-bottom:1rem;
+
+
+
+
+}
+main .clone{
+    position:fixed;
+    top:43%;
+    left:55%;
+    z-index:5;
+    margin-bottom:0.5rem;
+
+    font-size:1.9rem;
+    
+    opacity:0.5;
+
+}
+
+.search_wrap{
+    display:flex;
+    width:38rem;
+    height:2rem;
+    flex-direction: row;
+    /* padding:1rem; */
+    align-items: center;
+    border:0.03rem solid rgb(84, 91, 107);
+    border-radius:5rem;
+    padding:0.3rem 0.8rem;
+    /* padding-left:0.8rem; */
+}
+
+.search_wrap:hover{
+    background-color:rgba(51, 50, 50, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 3px;
+    border:0.06rem solid rgb(20, 20, 20);
+}
+.search_wrap:focus-within{
+    background-color:rgba(51, 50, 50, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 3px;
+    border:0.06rem solid rgb(20, 20, 20);
+}
+
+
+.search_wrap .image_wrap{
+    width:0.5rem;
+    height:2rem;
+    flex:0.2;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.image_wrap .search{
+    width:74%;
+    height:70%;
+    opacity:0.65;
+}
+.image_wrap #mic{
+    width:50%;
+    height:65%;
+}
+.search_wrap input{
+    flex:4;
+    height:2.1rem;
+    background:transparent;
+    outline:none;
+    border:0;
+    padding:0.5rem;
+    font-size:1.1rem;
+    color:whitesmoke;
+}
+.buttons, .buttons_two{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:1rem;
+    height:3.5rem;
+}
+
+.buttons button, .buttons_two button{
+    
+    height:2.5rem;
+    padding:0.2rem 0.8rem;
+    background:rgba(88, 88, 88,0.3);
+    border:0;
+    color:rgb(224, 216, 216);
+    font-family: 'Comfortaa', cursive;
+    border-radius: 0.2rem;
+    font-size:0.8rem;
+    opacity:0.8;
+
+}
+
+.buttons button:hover, .buttons_two button:hover{
+
+    background:rgba(92, 91, 91, 0.7);
+    border-radius: 0.3rem;
+    padding:0.3rem 0.8rem;
+    font-size: 0.8rem;
+    color:white;
+    opacity:1;
+    transition: all 0.2s ease-in-out;
+
+}
+
+
+.ls{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.5rem;
+
+}
+.ls > img{
+
+    width:1.5rem;
+    height:1.5rem;
+
+}
+
+
+
+a{
+
+    color:rgb(0, 132, 255);
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+   
+    font-size: 0.9rem;
+    
+    
+}
+
+
+.langs{
+    
+    font-size: 0.8rem;
+}
+
+.langs .languages{
+
+    color:#698dcc;
+    word-spacing: 0.5rem;
+    cursor: pointer;
+    
+}
+
+
+/* Main content of Default page ENDS HERE !! */
+
+
+
+footer{
+    height:2rem;
+    width: calc(100vw - 4rem);
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0.5rem 2rem;
+    padding-top:0.7rem;
+    align-items: center;
+    color:rgb(140, 147, 158);
+    flex-direction: row;
+    border-top:0.01rem solid rgb(66, 66, 66);
+    background-color:rgb(7, 7, 7, 0.5);
+    font-family: 'Titillium Web', sans-serif;
+
+    font-size:0.86rem;
+    font-weight:bolder;
+   
+
+}
+
+footer > div{
+    display: flex;
+    /* justify-content:space-around; */
+    align-items:flex-start;
+    gap:1rem;
+
+}
+
+/* MEDIA CONTROLS when window resizes to minium */
+
+@media only screen and (max-width:60rem), screen and (max-height: 35rem){
+
+    main h1{
+        color:white;
+        font-size: 3.5rem;
+        margin-bottom:0.6rem;
+    
+    
+    
+    
+    }
+    main .clone{
+      display: none;
+    
+    }
+    
+    .search_wrap{
+        display:flex;
+        width:40vw;
+        height:2rem;
+        flex-direction: row;
+        /* padding:1rem; */
+        align-items: center;
+        border:0.03rem solid rgb(84, 91, 107);
+        border-radius:5rem;
+        padding:0.3rem 0.8rem;
+        /* padding-left:0.8rem; */
+    }
+    
+    .search_wrap:hover{
+        background-color:rgba(51, 50, 50, 0.7);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 3px;
+        border:0.06rem solid rgb(20, 20, 20);
+    }
+    .search_wrap:focus-within{
+        background-color:rgba(51, 50, 50, 0.7);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 3px;
+        border:0.06rem solid rgb(20, 20, 20);
+    }
+    
+    .search_wrap .image_wrap{
+        width:1.5rem;
+        height:2rem;
+        flex:0.2;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .image_wrap .search{
+        width:74%;
+        height:70%;
+        opacity:0.65;
+    }
+    .image_wrap #mic{
+        width:50%;
+        height:65%;
+    }
+    .search_wrap input{
+        flex:4;
+        height:2.1rem;
+        background:transparent;
+        outline:none;
+        border:0;
+        padding:0.5rem;
+        font-size:1.1rem;
+        color:whitesmoke;
+    }
+    .buttons{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap:1rem;
+        height:3rem;
+    }
+    
+    .buttons button{
+        
+        height:2.2rem;
+        padding:0.2rem 0.8rem;
+        background:rgba(88, 88, 88,0.3);
+        border:0;
+        color:rgb(224, 216, 216);
+        font-family: 'Comfortaa', cursive;
+        border-radius: 0.2rem;
+        font-size:0.76rem;
+        opacity:0.8;
+    
+    }
+    
+    .buttons button:hover{
+    
+        background:rgba(92, 91, 91, 0.7);
+        border-radius: 0.3rem;
+        padding:0.3rem 0.8rem;
+        font-size: 0.8rem;
+        color:white;
+        opacity:1;
+        transition: all 0.2s ease-in-out;
+    
+    }
+    .langs{
+        font-size: 0.6rem;
+    }
+    
+    
+    footer{
+        display:none;
+    }
+
+
+}
+
+
+@media only screen and (max-height:389px), screen and (max-width:500px){
+
+    nav{
+        display:none;
+    }
+
+    main .h1{
+        font-size:2.5rem;
+    }
+    main .clone{
+        display:none;
+    }
+    .langs{
+        font-size: 0.6rem;
+    }
+
+    .buttons button{
+        display:none;
+    }
+
+    #search{
+        display:initial;
+    }
+
+}
+
+
+/* MEDIA CONTROL ends here */
+
+
+.search_results{
+    position:absolute;
+    top:57%;
+    left:29.7%;
+    width:40.5vw;
+    height:40vh;
+    background:white;
+    z-index: 20;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 3px;
+    background-color: rgb(19, 18, 18,0.9);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display:flex;
+    flex-direction: column;
+    color:rgb(245, 243, 243);
+    font-size: 1rem;
+    overflow-y:scroll;
+    
+    
+
+}
+
+.search_results div{
+    padding:0.5rem;
+    flex:1;
+}
+
+
+
+/* media controls for search results */
+
+@media only screen and (max-height:375px){
+
+    .search_results{
+        position:absolute;
+        top:43vh;
+        left:30%;
+        width:40.5vw;
+        height:50vh;
+        z-index: 20;
+        font-size:0.8rem;
+        overflow-y:scroll;
+
+    
+    }
+
+}
+.hidden{
+    display:none;
+}
+
+
+
+/* GOOGLE SEARCH PAGE RESULTS Starts here */
+
+
+.gsearch_container{
+    width:100vw;
+    height: calc(100vh - 5rem);
+    /* background-color: white; */
+    /* overflow-y: scroll; */
+    text-align: center;
+    padding:0;
+    margin:0;
+    border:0;
+    overflow-y:scroll;
+    overflow-x:hidden;
+   
+  
+    
+
+
+}
+
+.gsearch_container .gheader{
+
+    width:100vw;
+    height:5rem;
+    position:sticky;
+    top:0;
+    left:0;
+    display:flex;
+    align-items:center;
+    gap:2rem;
+    border-bottom: 0.01rem solid rgb(58, 57, 57);
+    opacity: 1;
+    background-color: rgb(31, 30, 30);
+
+
+}
+
+.ghead{
+    margin:0;
+    margin-left:1rem;
+    font-size:2.5rem;
+
+
+}
+.gheader .search_wrap{
+    background-color: rgba(65, 64, 64,0.7);
+    border:0;
+}
+
+
+
+.content{
+    height:55rem;
+    width:100%;
+   
+    
+    
+    
+}
+
+.content > div{
+    width:45rem;
+    height:8rem;
+    
+    margin-left:5rem;
+    margin-bottom:1rem;
+    margin-top: 1rem;
+    padding:0.5rem 2rem;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    font-family: 'Lato', sans-serif;
+    gap:0.3rem;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bolder;
+    
+    
+
+    
+}
+
+
+.content div div:nth-child(1) {
+    color: rgb(181, 185, 181);
+    text-align: left;
+    flex:0.5;
+    font-size:1rem;
+   
+    
+ }
+.content div div:nth-child(2) {
+    color: rgb(118, 151, 226);
+    text-align: left;
+    flex:1;
+    font-size: 1.2rem;
+    margin:0.5rem 0;
+ }
+.content div div:nth-child(3) {
+    color: rgb(185, 190, 185);
+    flex:0.5;
+    font-size:1rem;
+    text-align: left;
+   
+ }
